@@ -1,4 +1,5 @@
-dotenv
+fastapi
+uvicorn
 groq
 assemblyai
 reportlab

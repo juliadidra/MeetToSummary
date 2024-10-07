@@ -1,10 +1,8 @@
 
 import os
-from dotenv import load_dotenv
 from groq import Groq
 import assemblyai as aai
 
-load_dotenv()
 
 class LlamaConfig():
     def trancribe_textAI(audio):

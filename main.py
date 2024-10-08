@@ -31,7 +31,6 @@ async def root(File: UploadFile):
         caminho_arquivo = os.path.join(diretorio, filename)
 
         with open(caminho_arquivo, "wb") as arquivo:
-            # Escreve o conteúdo do arquivo enviado
             arquivo.write(File.file.read())
 
         response = LlamaConfig.trancribe_textAI(caminho_arquivo)

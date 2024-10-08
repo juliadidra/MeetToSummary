@@ -16,7 +16,6 @@ async def root(File: UploadFile):
         try:
             shutil.rmtree(diretorio)
         except OSError as e:
-            # Informe o usuário sobre quaisquer erros
             print(f"Erro: {e.filename} - {e.strerror}")
         
         if not os.path.exists(diretorio):

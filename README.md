@@ -10,5 +10,5 @@
   ```
 ### Para rodar o projeto
 - ainda dentro do ambiente virtual insira: `uvicorn main:app --reload`
-- acesse: `http://localhost:8000/docs` (escolha a porta em que o fastapi esteja rodando no seu desktop)
+- acesse: `http://localhost:8000/docs` (escolha a porta em que o fastapi esteja rodando no seu ambiente)
   

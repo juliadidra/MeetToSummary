@@ -2,10 +2,21 @@ from CreatePDF import CreatePDF
 from Assistant import LlamaConfig
 from fastapi import FastAPI, HTTPException, File, UploadFile
 from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 import shutil
 import os 
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.post("/assistant-ai")
